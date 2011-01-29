@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		0097E3E50F3E9819005A4392 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0097E3E40F3E9819005A4392 /* QuickTime.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00BAE65A0E7ED9C10018A608 /* PhilosopherCube_FinalApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00BAE6590E7ED9C10018A608 /* PhilosopherCube_FinalApp.cpp */; };
+		00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 00CCAF14116A9FEE008396D5 /* CinderApp.icns */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		DF1C985112DB15CE004A5535 /* black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF1C984912DB15CE004A5535 /* black.jpg */; };
+		DF1C985212DB15CE004A5535 /* blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF1C984A12DB15CE004A5535 /* blue.jpg */; };
+		DF1C985312DB15CE004A5535 /* darkGreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF1C984B12DB15CE004A5535 /* darkGreen.jpg */; };
+		DF1C985412DB15CE004A5535 /* lightGreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF1C984C12DB15CE004A5535 /* lightGreen.jpg */; };
+		DF1C985512DB15CE004A5535 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF1C984D12DB15CE004A5535 /* orange.jpg */; };
+		DF1C985612DB15CE004A5535 /* red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF1C984E12DB15CE004A5535 /* red.jpg */; };
+		DF1C985712DB15CE004A5535 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF1C984F12DB15CE004A5535 /* white.jpg */; };
+		DF1C985812DB15CE004A5535 /* yellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF1C985012DB15CE004A5535 /* yellow.jpg */; };
+		DF1C986712DB168F004A5535 /* Wall.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF1C986612DB168F004A5535 /* Wall.obj */; };
+		DF1C986D12DB1789004A5535 /* h.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF1C986C12DB1789004A5535 /* h.ttf */; };
+		DF81065412897F3500220ABC /* AlienCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF81064E12897F3500220ABC /* AlienCube.cpp */; };
+		DF81065512897F3500220ABC /* AnswerWall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF81064F12897F3500220ABC /* AnswerWall.cpp */; };
+		DF81065612897F3500220ABC /* MovableBlocks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF81065012897F3500220ABC /* MovableBlocks.cpp */; };
+		DF81065712897F3500220ABC /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF81065112897F3500220ABC /* Particle.cpp */; };
+		DF81065812897F3500220ABC /* ParticleController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF81065212897F3500220ABC /* ParticleController.cpp */; };
+		DF81065912897F3500220ABC /* Question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF81065312897F3500220ABC /* Question.cpp */; };
+		DF81067212897F8300220ABC /* libftgl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF81067112897F8300220ABC /* libftgl.a */; };
+		DF81067412897F8B00220ABC /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF81067312897F8B00220ABC /* libfreetype.a */; };
+		DF81071112897FFA00220ABC /* AlienCube_1.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068212897FF900220ABC /* AlienCube_1.obj */; };
+		DF81071212897FFA00220ABC /* AlienCube_10.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068312897FF900220ABC /* AlienCube_10.obj */; };
+		DF81071312897FFA00220ABC /* AlienCube_11.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068412897FF900220ABC /* AlienCube_11.obj */; };
+		DF81071412897FFA00220ABC /* AlienCube_12.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068512897FF900220ABC /* AlienCube_12.obj */; };
+		DF81071512897FFA00220ABC /* AlienCube_13.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068612897FF900220ABC /* AlienCube_13.obj */; };
+		DF81071612897FFA00220ABC /* AlienCube_14.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068712897FF900220ABC /* AlienCube_14.obj */; };
+		DF81071712897FFA00220ABC /* AlienCube_15.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068812897FF900220ABC /* AlienCube_15.obj */; };
+		DF81071812897FFA00220ABC /* AlienCube_16.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068912897FF900220ABC /* AlienCube_16.obj */; };
+		DF81071912897FFA00220ABC /* AlienCube_17.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068A12897FF900220ABC /* AlienCube_17.obj */; };
+		DF81071A12897FFA00220ABC /* AlienCube_18.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068B12897FF900220ABC /* AlienCube_18.obj */; };
+		DF81071B12897FFA00220ABC /* AlienCube_19.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068C12897FF900220ABC /* AlienCube_19.obj */; };
+		DF81071C12897FFA00220ABC /* AlienCube_2.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068D12897FF900220ABC /* AlienCube_2.obj */; };
+		DF81071D12897FFA00220ABC /* AlienCube_20.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068E12897FF900220ABC /* AlienCube_20.obj */; };
+		DF81071E12897FFA00220ABC /* AlienCube_21.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81068F12897FF900220ABC /* AlienCube_21.obj */; };
+		DF81071F12897FFA00220ABC /* AlienCube_22.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069012897FF900220ABC /* AlienCube_22.obj */; };
+		DF81072012897FFA00220ABC /* AlienCube_23.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069112897FF900220ABC /* AlienCube_23.obj */; };
+		DF81072112897FFA00220ABC /* AlienCube_24.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069212897FF900220ABC /* AlienCube_24.obj */; };
+		DF81072212897FFA00220ABC /* AlienCube_3.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069312897FF900220ABC /* AlienCube_3.obj */; };
+		DF81072312897FFA00220ABC /* AlienCube_4.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069412897FF900220ABC /* AlienCube_4.obj */; };
+		DF81072412897FFA00220ABC /* AlienCube_5.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069512897FF900220ABC /* AlienCube_5.obj */; };
+		DF81072512897FFA00220ABC /* AlienCube_6.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069612897FF900220ABC /* AlienCube_6.obj */; };
+		DF81072612897FFA00220ABC /* AlienCube_7.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069712897FF900220ABC /* AlienCube_7.obj */; };
+		DF81072712897FFA00220ABC /* AlienCube_8.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069812897FFA00220ABC /* AlienCube_8.obj */; };
+		DF81072812897FFA00220ABC /* AlienCube_9.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069912897FFA00220ABC /* AlienCube_9.obj */; };
+		DF81072912897FFA00220ABC /* AlienCube_Test.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069A12897FFA00220ABC /* AlienCube_Test.obj */; };
+		DF81072A12897FFA00220ABC /* Block_00.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF81069C12897FFA00220ABC /* Block_00.mtl */; };
+		DF81072B12897FFA00220ABC /* Block_00.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069D12897FFA00220ABC /* Block_00.obj */; };
+		DF81072C12897FFA00220ABC /* Block_01.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF81069E12897FFA00220ABC /* Block_01.mtl */; };
+		DF81072D12897FFA00220ABC /* Block_01.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF81069F12897FFA00220ABC /* Block_01.obj */; };
+		DF81072E12897FFA00220ABC /* Block_02.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A012897FFA00220ABC /* Block_02.mtl */; };
+		DF81072F12897FFA00220ABC /* Block_02.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A112897FFA00220ABC /* Block_02.obj */; };
+		DF81073012897FFA00220ABC /* Block_03.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A212897FFA00220ABC /* Block_03.mtl */; };
+		DF81073112897FFA00220ABC /* Block_03.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A312897FFA00220ABC /* Block_03.obj */; };
+		DF81073212897FFA00220ABC /* Block_04.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A412897FFA00220ABC /* Block_04.mtl */; };
+		DF81073312897FFA00220ABC /* Block_04.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A512897FFA00220ABC /* Block_04.obj */; };
+		DF81073412897FFA00220ABC /* Block_10.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A612897FFA00220ABC /* Block_10.mtl */; };
+		DF81073512897FFA00220ABC /* Block_10.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A712897FFA00220ABC /* Block_10.obj */; };
+		DF81073612897FFA00220ABC /* Block_11.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A812897FFA00220ABC /* Block_11.mtl */; };
+		DF81073712897FFA00220ABC /* Block_11.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106A912897FFA00220ABC /* Block_11.obj */; };
+		DF81073812897FFA00220ABC /* Block_12.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106AA12897FFA00220ABC /* Block_12.mtl */; };
+		DF81073912897FFA00220ABC /* Block_12.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106AB12897FFA00220ABC /* Block_12.obj */; };
+		DF81073A12897FFA00220ABC /* Block_13.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106AC12897FFA00220ABC /* Block_13.mtl */; };
+		DF81073B12897FFA00220ABC /* Block_13.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106AD12897FFA00220ABC /* Block_13.obj */; };
+		DF81073C12897FFA00220ABC /* Block_14.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106AE12897FFA00220ABC /* Block_14.mtl */; };
+		DF81073D12897FFA00220ABC /* Block_14.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106AF12897FFA00220ABC /* Block_14.obj */; };
+		DF81073E12897FFA00220ABC /* Block_20.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B012897FFA00220ABC /* Block_20.mtl */; };
+		DF81073F12897FFA00220ABC /* Block_20.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B112897FFA00220ABC /* Block_20.obj */; };
+		DF81074012897FFA00220ABC /* Block_21.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B212897FFA00220ABC /* Block_21.mtl */; };
+		DF81074112897FFA00220ABC /* Block_21.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B312897FFA00220ABC /* Block_21.obj */; };
+		DF81074212897FFA00220ABC /* Block_22.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B412897FFA00220ABC /* Block_22.mtl */; };
+		DF81074312897FFA00220ABC /* Block_22.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B512897FFA00220ABC /* Block_22.obj */; };
+		DF81074412897FFA00220ABC /* Block_23.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B612897FFA00220ABC /* Block_23.mtl */; };
+		DF81074512897FFA00220ABC /* Block_23.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B712897FFA00220ABC /* Block_23.obj */; };
+		DF81074612897FFA00220ABC /* Block_24.mtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B812897FFA00220ABC /* Block_24.mtl */; };
+		DF81074712897FFA00220ABC /* Block_24.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF8106B912897FFA00220ABC /* Block_24.obj */; };
+		DF81075712897FFA00220ABC /* AlienCube_NotExtruded.ma.swatches in Resources */ = {isa = PBXBuildFile; fileRef = DF8106CC12897FFA00220ABC /* AlienCube_NotExtruded.ma.swatches */; };
+		DF81075812897FFA00220ABC /* AlienCube_Animated.ma in Resources */ = {isa = PBXBuildFile; fileRef = DF8106CD12897FFA00220ABC /* AlienCube_Animated.ma */; };
+		DF81075B12897FFA00220ABC /* basicTexture_frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106D112897FFA00220ABC /* basicTexture_frag.glsl */; };
+		DF81075C12897FFA00220ABC /* basicTexture_vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106D212897FFA00220ABC /* basicTexture_vert.glsl */; };
+		DF81075F12897FFA00220ABC /* shadowMap_2_frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106D512897FFA00220ABC /* shadowMap_2_frag.glsl */; };
+		DF81076012897FFA00220ABC /* shadowMap_2_vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106D612897FFA00220ABC /* shadowMap_2_vert.glsl */; };
+		DF81076112897FFA00220ABC /* shadowMap_frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106D712897FFA00220ABC /* shadowMap_frag.glsl */; };
+		DF81076212897FFA00220ABC /* shadowMap_vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106D812897FFA00220ABC /* shadowMap_vert.glsl */; };
+		DF81076312897FFA00220ABC /* textureAndShadow_frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106D912897FFA00220ABC /* textureAndShadow_frag.glsl */; };
+		DF81076412897FFA00220ABC /* textureAndShadow_vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF8106DA12897FFA00220ABC /* textureAndShadow_vert.glsl */; };
+		DF81076512897FFA00220ABC /* AlienCube_Texture.jpg.swatch in Resources */ = {isa = PBXBuildFile; fileRef = DF8106DD12897FFA00220ABC /* AlienCube_Texture.jpg.swatch */; };
+		DF81076612897FFA00220ABC /* CubeTexture.jpg.swatch in Resources */ = {isa = PBXBuildFile; fileRef = DF8106DE12897FFA00220ABC /* CubeTexture.jpg.swatch */; };
+		DF81076712897FFA00220ABC /* sampleTextTex2.jpg.swatch in Resources */ = {isa = PBXBuildFile; fileRef = DF8106DF12897FFA00220ABC /* sampleTextTex2.jpg.swatch */; };
+		DF81076812897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.03 PM.png.swatch in Resources */ = {isa = PBXBuildFile; fileRef = DF8106E012897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.03 PM.png.swatch */; };
+		DF81076912897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.23 PM.png.swatch in Resources */ = {isa = PBXBuildFile; fileRef = DF8106E112897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.23 PM.png.swatch */; };
+		DF81076A12897FFA00220ABC /* ScreenShotMatch.png.swatch in Resources */ = {isa = PBXBuildFile; fileRef = DF8106E212897FFA00220ABC /* ScreenShotMatch.png.swatch */; };
+		DF81076B12897FFA00220ABC /* ScreenShotMatch_Side.png.swatch in Resources */ = {isa = PBXBuildFile; fileRef = DF8106E312897FFA00220ABC /* ScreenShotMatch_Side.png.swatch */; };
+		DF81076D12897FFA00220ABC /* AlienCube_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF8106E512897FFA00220ABC /* AlienCube_Texture.jpg */; };
+		DF81076E12897FFA00220ABC /* AlienCube_Texture_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF8106E612897FFA00220ABC /* AlienCube_Texture_2.jpg */; };
+		DF81077712897FFA00220ABC /* corona.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8106F012897FFA00220ABC /* corona.png */; };
+		DF81077912897FFA00220ABC /* CubeTexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF8106F212897FFA00220ABC /* CubeTexture.jpg */; };
+		DF81077B12897FFA00220ABC /* GlowParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8106F412897FFA00220ABC /* GlowParticle.png */; };
+		DF81077C12897FFA00220ABC /* GlowParticle2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8106F512897FFA00220ABC /* GlowParticle2.png */; };
+		DF81077D12897FFA00220ABC /* GlowParticle3.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8106F612897FFA00220ABC /* GlowParticle3.png */; };
+		DF81077E12897FFA00220ABC /* GlowParticleBG.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8106F712897FFA00220ABC /* GlowParticleBG.png */; };
+		DF81077F12897FFA00220ABC /* QuestionTex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF8106F812897FFA00220ABC /* QuestionTex.jpg */; };
+		DF81078012897FFA00220ABC /* sampleTextTex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF8106F912897FFA00220ABC /* sampleTextTex.jpg */; };
+		DF81078212897FFA00220ABC /* sampleTextTex2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF8106FB12897FFA00220ABC /* sampleTextTex2.jpg */; };
+		DF81078312897FFA00220ABC /* sampleTextTex3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF8106FC12897FFA00220ABC /* sampleTextTex3.jpg */; };
+		DF81078912897FFA00220ABC /* TestWallTexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF81070212897FFA00220ABC /* TestWallTexture.jpg */; };
+		DF81078A12897FFA00220ABC /* tweetMessage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF81070312897FFA00220ABC /* tweetMessage.jpg */; };
+		DF81078B12897FFA00220ABC /* WallTexture_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF81070412897FFA00220ABC /* WallTexture_1.jpg */; };
+		DF81078C12897FFA00220ABC /* WallTexture_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF81070512897FFA00220ABC /* WallTexture_2.jpg */; };
+		DF81078D12897FFA00220ABC /* WallTexture_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF81070612897FFA00220ABC /* WallTexture_3.jpg */; };
+		DF81078E12897FFA00220ABC /* WallTexture_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF81070712897FFA00220ABC /* WallTexture_4.jpg */; };
+		DF81079012897FFA00220ABC /* WallTexture_Flipped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF81070912897FFA00220ABC /* WallTexture_Flipped.jpg */; };
+		DF81079112897FFA00220ABC /* workspace.mel in Resources */ = {isa = PBXBuildFile; fileRef = DF81070A12897FFA00220ABC /* workspace.mel */; };
+		DF81079212897FFA00220ABC /* philoTwitterMentions.sh in Resources */ = {isa = PBXBuildFile; fileRef = DF81070C12897FFA00220ABC /* philoTwitterMentions.sh */; };
+		DF81079312897FFA00220ABC /* philoTwitterUpdate.sh in Resources */ = {isa = PBXBuildFile; fileRef = DF81070D12897FFA00220ABC /* philoTwitterUpdate.sh */; };
+		DF81079412897FFA00220ABC /* twitterReturn.xml in Resources */ = {isa = PBXBuildFile; fileRef = DF81070E12897FFA00220ABC /* twitterReturn.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		0097E3E40F3E9819005A4392 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00BAE6590E7ED9C10018A608 /* PhilosopherCube_FinalApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhilosopherCube_FinalApp.cpp; path = ../src/PhilosopherCube_FinalApp.cpp; sourceTree = SOURCE_ROOT; };
+		00CCAF14116A9FEE008396D5 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = SOURCE_ROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* PhilosopherCube_Final_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhilosopherCube_Final_Prefix.pch; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* PhilosopherCube_Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhilosopherCube_Final.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1C984912DB15CE004A5535 /* black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = black.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours/black.jpg; sourceTree = DEVELOPER_DIR; };
+		DF1C984A12DB15CE004A5535 /* blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blue.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours/blue.jpg; sourceTree = DEVELOPER_DIR; };
+		DF1C984B12DB15CE004A5535 /* darkGreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = darkGreen.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours/darkGreen.jpg; sourceTree = DEVELOPER_DIR; };
+		DF1C984C12DB15CE004A5535 /* lightGreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lightGreen.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours/lightGreen.jpg; sourceTree = DEVELOPER_DIR; };
+		DF1C984D12DB15CE004A5535 /* orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = orange.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours/orange.jpg; sourceTree = DEVELOPER_DIR; };
+		DF1C984E12DB15CE004A5535 /* red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = red.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours/red.jpg; sourceTree = DEVELOPER_DIR; };
+		DF1C984F12DB15CE004A5535 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = white.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours/white.jpg; sourceTree = DEVELOPER_DIR; };
+		DF1C985012DB15CE004A5535 /* yellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yellow.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours/yellow.jpg; sourceTree = DEVELOPER_DIR; };
+		DF1C986612DB168F004A5535 /* Wall.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Wall.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/Wall.obj; sourceTree = DEVELOPER_DIR; };
+		DF1C986C12DB1789004A5535 /* h.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = h.ttf; path = CinderProjects/PhilosopherCube_Final/resources/fonts/h.ttf; sourceTree = DEVELOPER_DIR; };
+		DF81064B12897F1F00220ABC /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = CinderProjects/PhilosopherCube_Final/include/Resources.h; sourceTree = DEVELOPER_DIR; };
+		DF81064E12897F3500220ABC /* AlienCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AlienCube.cpp; path = CinderProjects/PhilosopherCube_Final/src/AlienCube.cpp; sourceTree = DEVELOPER_DIR; };
+		DF81064F12897F3500220ABC /* AnswerWall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnswerWall.cpp; path = CinderProjects/PhilosopherCube_Final/src/AnswerWall.cpp; sourceTree = DEVELOPER_DIR; };
+		DF81065012897F3500220ABC /* MovableBlocks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MovableBlocks.cpp; path = CinderProjects/PhilosopherCube_Final/src/MovableBlocks.cpp; sourceTree = DEVELOPER_DIR; };
+		DF81065112897F3500220ABC /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Particle.cpp; path = CinderProjects/PhilosopherCube_Final/src/Particle.cpp; sourceTree = DEVELOPER_DIR; };
+		DF81065212897F3500220ABC /* ParticleController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParticleController.cpp; path = CinderProjects/PhilosopherCube_Final/src/ParticleController.cpp; sourceTree = DEVELOPER_DIR; };
+		DF81065312897F3500220ABC /* Question.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Question.cpp; path = CinderProjects/PhilosopherCube_Final/src/Question.cpp; sourceTree = DEVELOPER_DIR; };
+		DF81065A12897F5800220ABC /* AlienCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlienCube.h; path = CinderProjects/PhilosopherCube_Final/src/AlienCube.h; sourceTree = DEVELOPER_DIR; };
+		DF81065B12897F5800220ABC /* AnswerWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnswerWall.h; path = CinderProjects/PhilosopherCube_Final/src/AnswerWall.h; sourceTree = DEVELOPER_DIR; };
+		DF81065C12897F5800220ABC /* CustomStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomStructs.h; path = CinderProjects/PhilosopherCube_Final/src/CustomStructs.h; sourceTree = DEVELOPER_DIR; };
+		DF81065D12897F5800220ABC /* MovableBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovableBlocks.h; path = CinderProjects/PhilosopherCube_Final/src/MovableBlocks.h; sourceTree = DEVELOPER_DIR; };
+		DF81065E12897F5800220ABC /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Particle.h; path = CinderProjects/PhilosopherCube_Final/src/Particle.h; sourceTree = DEVELOPER_DIR; };
+		DF81065F12897F5800220ABC /* ParticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParticleController.h; path = CinderProjects/PhilosopherCube_Final/src/ParticleController.h; sourceTree = DEVELOPER_DIR; };
+		DF81066012897F5800220ABC /* PhilosopherCube_FinalApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhilosopherCube_FinalApp.h; path = CinderProjects/PhilosopherCube_Final/src/PhilosopherCube_FinalApp.h; sourceTree = DEVELOPER_DIR; };
+		DF81066112897F5800220ABC /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = CinderProjects/PhilosopherCube_Final/src/Question.h; sourceTree = DEVELOPER_DIR; };
+		DF81066212897F5800220ABC /* TwitterXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitterXML.h; path = CinderProjects/PhilosopherCube_Final/src/TwitterXML.h; sourceTree = DEVELOPER_DIR; };
+		DF81066312897F5800220ABC /* Utilities_ACS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities_ACS.h; path = CinderProjects/PhilosopherCube_Final/src/Utilities_ACS.h; sourceTree = DEVELOPER_DIR; };
+		DF81067112897F8300220ABC /* libftgl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libftgl.a; path = "/opt/local/var/macports/software/ftgl/2.1.3-rc5_0+universal/opt/local/lib/libftgl.a"; sourceTree = "<absolute>"; };
+		DF81067312897F8B00220ABC /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = "/opt/local/var/macports/software/freetype/2.4.3_0+universal/opt/local/lib/libfreetype.a"; sourceTree = "<absolute>"; };
+		DF81068212897FF900220ABC /* AlienCube_1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_1.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_1.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068312897FF900220ABC /* AlienCube_10.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_10.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_10.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068412897FF900220ABC /* AlienCube_11.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_11.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_11.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068512897FF900220ABC /* AlienCube_12.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_12.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_12.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068612897FF900220ABC /* AlienCube_13.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_13.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_13.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068712897FF900220ABC /* AlienCube_14.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_14.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_14.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068812897FF900220ABC /* AlienCube_15.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_15.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_15.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068912897FF900220ABC /* AlienCube_16.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_16.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_16.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068A12897FF900220ABC /* AlienCube_17.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_17.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_17.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068B12897FF900220ABC /* AlienCube_18.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_18.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_18.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068C12897FF900220ABC /* AlienCube_19.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_19.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_19.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068D12897FF900220ABC /* AlienCube_2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_2.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_2.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068E12897FF900220ABC /* AlienCube_20.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_20.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_20.obj; sourceTree = DEVELOPER_DIR; };
+		DF81068F12897FF900220ABC /* AlienCube_21.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_21.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_21.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069012897FF900220ABC /* AlienCube_22.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_22.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_22.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069112897FF900220ABC /* AlienCube_23.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_23.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_23.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069212897FF900220ABC /* AlienCube_24.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_24.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_24.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069312897FF900220ABC /* AlienCube_3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_3.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_3.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069412897FF900220ABC /* AlienCube_4.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_4.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_4.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069512897FF900220ABC /* AlienCube_5.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_5.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_5.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069612897FF900220ABC /* AlienCube_6.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_6.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_6.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069712897FF900220ABC /* AlienCube_7.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_7.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_7.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069812897FFA00220ABC /* AlienCube_8.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_8.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_8.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069912897FFA00220ABC /* AlienCube_9.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_9.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_9.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069A12897FFA00220ABC /* AlienCube_Test.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_Test.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/AlienCube_Test.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069C12897FFA00220ABC /* Block_00.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_00.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_00.mtl; sourceTree = DEVELOPER_DIR; };
+		DF81069D12897FFA00220ABC /* Block_00.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_00.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_00.obj; sourceTree = DEVELOPER_DIR; };
+		DF81069E12897FFA00220ABC /* Block_01.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_01.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_01.mtl; sourceTree = DEVELOPER_DIR; };
+		DF81069F12897FFA00220ABC /* Block_01.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_01.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_01.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106A012897FFA00220ABC /* Block_02.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_02.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_02.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106A112897FFA00220ABC /* Block_02.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_02.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_02.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106A212897FFA00220ABC /* Block_03.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_03.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_03.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106A312897FFA00220ABC /* Block_03.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_03.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_03.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106A412897FFA00220ABC /* Block_04.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_04.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_04.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106A512897FFA00220ABC /* Block_04.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_04.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_04.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106A612897FFA00220ABC /* Block_10.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_10.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_10.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106A712897FFA00220ABC /* Block_10.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_10.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_10.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106A812897FFA00220ABC /* Block_11.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_11.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_11.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106A912897FFA00220ABC /* Block_11.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_11.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_11.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106AA12897FFA00220ABC /* Block_12.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_12.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_12.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106AB12897FFA00220ABC /* Block_12.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_12.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_12.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106AC12897FFA00220ABC /* Block_13.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_13.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_13.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106AD12897FFA00220ABC /* Block_13.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_13.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_13.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106AE12897FFA00220ABC /* Block_14.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_14.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_14.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106AF12897FFA00220ABC /* Block_14.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_14.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_14.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106B012897FFA00220ABC /* Block_20.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_20.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_20.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106B112897FFA00220ABC /* Block_20.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_20.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_20.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106B212897FFA00220ABC /* Block_21.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_21.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_21.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106B312897FFA00220ABC /* Block_21.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_21.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_21.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106B412897FFA00220ABC /* Block_22.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_22.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_22.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106B512897FFA00220ABC /* Block_22.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_22.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_22.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106B612897FFA00220ABC /* Block_23.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_23.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_23.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106B712897FFA00220ABC /* Block_23.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_23.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_23.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106B812897FFA00220ABC /* Block_24.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_24.mtl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_24.mtl; sourceTree = DEVELOPER_DIR; };
+		DF8106B912897FFA00220ABC /* Block_24.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Block_24.obj; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks/Block_24.obj; sourceTree = DEVELOPER_DIR; };
+		DF8106CC12897FFA00220ABC /* AlienCube_NotExtruded.ma.swatches */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlienCube_NotExtruded.ma.swatches; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/scenes/.mayaSwatches/AlienCube_NotExtruded.ma.swatches; sourceTree = DEVELOPER_DIR; };
+		DF8106CD12897FFA00220ABC /* AlienCube_Animated.ma */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AlienCube_Animated.ma; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/scenes/AlienCube_Animated.ma; sourceTree = DEVELOPER_DIR; };
+		DF8106D112897FFA00220ABC /* basicTexture_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = basicTexture_frag.glsl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders/basicTexture_frag.glsl; sourceTree = DEVELOPER_DIR; };
+		DF8106D212897FFA00220ABC /* basicTexture_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = basicTexture_vert.glsl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders/basicTexture_vert.glsl; sourceTree = DEVELOPER_DIR; };
+		DF8106D512897FFA00220ABC /* shadowMap_2_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shadowMap_2_frag.glsl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders/shadowMap_2_frag.glsl; sourceTree = DEVELOPER_DIR; };
+		DF8106D612897FFA00220ABC /* shadowMap_2_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shadowMap_2_vert.glsl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders/shadowMap_2_vert.glsl; sourceTree = DEVELOPER_DIR; };
+		DF8106D712897FFA00220ABC /* shadowMap_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shadowMap_frag.glsl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders/shadowMap_frag.glsl; sourceTree = DEVELOPER_DIR; };
+		DF8106D812897FFA00220ABC /* shadowMap_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shadowMap_vert.glsl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders/shadowMap_vert.glsl; sourceTree = DEVELOPER_DIR; };
+		DF8106D912897FFA00220ABC /* textureAndShadow_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = textureAndShadow_frag.glsl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders/textureAndShadow_frag.glsl; sourceTree = DEVELOPER_DIR; };
+		DF8106DA12897FFA00220ABC /* textureAndShadow_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = textureAndShadow_vert.glsl; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders/textureAndShadow_vert.glsl; sourceTree = DEVELOPER_DIR; };
+		DF8106DD12897FFA00220ABC /* AlienCube_Texture.jpg.swatch */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlienCube_Texture.jpg.swatch; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/.mayaSwatches/AlienCube_Texture.jpg.swatch; sourceTree = DEVELOPER_DIR; };
+		DF8106DE12897FFA00220ABC /* CubeTexture.jpg.swatch */ = {isa = PBXFileReference; lastKnownFileType = file; name = CubeTexture.jpg.swatch; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/.mayaSwatches/CubeTexture.jpg.swatch; sourceTree = DEVELOPER_DIR; };
+		DF8106DF12897FFA00220ABC /* sampleTextTex2.jpg.swatch */ = {isa = PBXFileReference; lastKnownFileType = file; name = sampleTextTex2.jpg.swatch; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/.mayaSwatches/sampleTextTex2.jpg.swatch; sourceTree = DEVELOPER_DIR; };
+		DF8106E012897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.03 PM.png.swatch */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Screen shot 2010-10-27 at 5.50.03 PM.png.swatch"; path = "CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/.mayaSwatches/Screen shot 2010-10-27 at 5.50.03 PM.png.swatch"; sourceTree = DEVELOPER_DIR; };
+		DF8106E112897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.23 PM.png.swatch */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Screen shot 2010-10-27 at 5.50.23 PM.png.swatch"; path = "CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/.mayaSwatches/Screen shot 2010-10-27 at 5.50.23 PM.png.swatch"; sourceTree = DEVELOPER_DIR; };
+		DF8106E212897FFA00220ABC /* ScreenShotMatch.png.swatch */ = {isa = PBXFileReference; lastKnownFileType = file; name = ScreenShotMatch.png.swatch; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/.mayaSwatches/ScreenShotMatch.png.swatch; sourceTree = DEVELOPER_DIR; };
+		DF8106E312897FFA00220ABC /* ScreenShotMatch_Side.png.swatch */ = {isa = PBXFileReference; lastKnownFileType = file; name = ScreenShotMatch_Side.png.swatch; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/.mayaSwatches/ScreenShotMatch_Side.png.swatch; sourceTree = DEVELOPER_DIR; };
+		DF8106E512897FFA00220ABC /* AlienCube_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = AlienCube_Texture.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/AlienCube_Texture.jpg; sourceTree = DEVELOPER_DIR; };
+		DF8106E612897FFA00220ABC /* AlienCube_Texture_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = AlienCube_Texture_2.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/AlienCube_Texture_2.jpg; sourceTree = DEVELOPER_DIR; };
+		DF8106F012897FFA00220ABC /* corona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = corona.png; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/corona.png; sourceTree = DEVELOPER_DIR; };
+		DF8106F212897FFA00220ABC /* CubeTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CubeTexture.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/CubeTexture.jpg; sourceTree = DEVELOPER_DIR; };
+		DF8106F412897FFA00220ABC /* GlowParticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GlowParticle.png; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/GlowParticle.png; sourceTree = DEVELOPER_DIR; };
+		DF8106F512897FFA00220ABC /* GlowParticle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GlowParticle2.png; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/GlowParticle2.png; sourceTree = DEVELOPER_DIR; };
+		DF8106F612897FFA00220ABC /* GlowParticle3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GlowParticle3.png; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/GlowParticle3.png; sourceTree = DEVELOPER_DIR; };
+		DF8106F712897FFA00220ABC /* GlowParticleBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GlowParticleBG.png; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/GlowParticleBG.png; sourceTree = DEVELOPER_DIR; };
+		DF8106F812897FFA00220ABC /* QuestionTex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = QuestionTex.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/QuestionTex.jpg; sourceTree = DEVELOPER_DIR; };
+		DF8106F912897FFA00220ABC /* sampleTextTex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sampleTextTex.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/sampleTextTex.jpg; sourceTree = DEVELOPER_DIR; };
+		DF8106FB12897FFA00220ABC /* sampleTextTex2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sampleTextTex2.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/sampleTextTex2.jpg; sourceTree = DEVELOPER_DIR; };
+		DF8106FC12897FFA00220ABC /* sampleTextTex3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sampleTextTex3.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/sampleTextTex3.jpg; sourceTree = DEVELOPER_DIR; };
+		DF81070212897FFA00220ABC /* TestWallTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TestWallTexture.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/TestWallTexture.jpg; sourceTree = DEVELOPER_DIR; };
+		DF81070312897FFA00220ABC /* tweetMessage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tweetMessage.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/tweetMessage.jpg; sourceTree = DEVELOPER_DIR; };
+		DF81070412897FFA00220ABC /* WallTexture_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WallTexture_1.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/WallTexture_1.jpg; sourceTree = DEVELOPER_DIR; };
+		DF81070512897FFA00220ABC /* WallTexture_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WallTexture_2.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/WallTexture_2.jpg; sourceTree = DEVELOPER_DIR; };
+		DF81070612897FFA00220ABC /* WallTexture_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WallTexture_3.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/WallTexture_3.jpg; sourceTree = DEVELOPER_DIR; };
+		DF81070712897FFA00220ABC /* WallTexture_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WallTexture_4.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/WallTexture_4.jpg; sourceTree = DEVELOPER_DIR; };
+		DF81070912897FFA00220ABC /* WallTexture_Flipped.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WallTexture_Flipped.jpg; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/WallTexture_Flipped.jpg; sourceTree = DEVELOPER_DIR; };
+		DF81070A12897FFA00220ABC /* workspace.mel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = workspace.mel; path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/workspace.mel; sourceTree = DEVELOPER_DIR; };
+		DF81070C12897FFA00220ABC /* philoTwitterMentions.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = philoTwitterMentions.sh; path = CinderProjects/PhilosopherCube_Final/resources/shellScripts/philoTwitterMentions.sh; sourceTree = DEVELOPER_DIR; };
+		DF81070D12897FFA00220ABC /* philoTwitterUpdate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = philoTwitterUpdate.sh; path = CinderProjects/PhilosopherCube_Final/resources/shellScripts/philoTwitterUpdate.sh; sourceTree = DEVELOPER_DIR; };
+		DF81070E12897FFA00220ABC /* twitterReturn.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = twitterReturn.xml; path = CinderProjects/PhilosopherCube_Final/resources/shellScripts/twitterReturn.xml; sourceTree = DEVELOPER_DIR; };
+		DF8107B6128980D600220ABC /* DefinesAndConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefinesAndConstants.h; path = CinderProjects/PhilosopherCube_Final/src/DefinesAndConstants.h; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				0097E3E50F3E9819005A4392 /* QuickTime.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				DF81067212897F8300220ABC /* libftgl.a in Frameworks */,
+				DF81067412897F8B00220ABC /* libfreetype.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DF81064E12897F3500220ABC /* AlienCube.cpp */,
+				DF81064F12897F3500220ABC /* AnswerWall.cpp */,
+				DF81065012897F3500220ABC /* MovableBlocks.cpp */,
+				DF81065112897F3500220ABC /* Particle.cpp */,
+				DF81065212897F3500220ABC /* ParticleController.cpp */,
+				DF81065312897F3500220ABC /* Question.cpp */,
+				00BAE6590E7ED9C10018A608 /* PhilosopherCube_FinalApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				0097E3E40F3E9819005A4392 /* QuickTime.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				53E3CDFB0E86099300238D2B /* Carbon.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* PhilosopherCube_Final.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PhilosopherCube_Final */ = {
+			isa = PBXGroup;
+			children = (
+				DF81067012897F7200220ABC /* addons */,
+				DF81064A12897F1F00220ABC /* include */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PhilosopherCube_Final;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DF8107B6128980D600220ABC /* DefinesAndConstants.h */,
+				DF81065A12897F5800220ABC /* AlienCube.h */,
+				DF81065B12897F5800220ABC /* AnswerWall.h */,
+				DF81065C12897F5800220ABC /* CustomStructs.h */,
+				DF81065D12897F5800220ABC /* MovableBlocks.h */,
+				DF81065E12897F5800220ABC /* Particle.h */,
+				DF81065F12897F5800220ABC /* ParticleController.h */,
+				DF81066012897F5800220ABC /* PhilosopherCube_FinalApp.h */,
+				DF81066112897F5800220ABC /* Question.h */,
+				DF81066212897F5800220ABC /* TwitterXML.h */,
+				DF81066312897F5800220ABC /* Utilities_ACS.h */,
+				32CA4F630368D1EE00C91783 /* PhilosopherCube_Final_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF81067912897FF900220ABC /* fonts */,
+				DF81067C12897FF900220ABC /* PhilosopherCube_MayaProj */,
+				DF81070B12897FFA00220ABC /* shellScripts */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				00CCAF14116A9FEE008396D5 /* CinderApp.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF1C984812DB15CE004A5535 /* colours */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C984912DB15CE004A5535 /* black.jpg */,
+				DF1C984A12DB15CE004A5535 /* blue.jpg */,
+				DF1C984B12DB15CE004A5535 /* darkGreen.jpg */,
+				DF1C984C12DB15CE004A5535 /* lightGreen.jpg */,
+				DF1C984D12DB15CE004A5535 /* orange.jpg */,
+				DF1C984E12DB15CE004A5535 /* red.jpg */,
+				DF1C984F12DB15CE004A5535 /* white.jpg */,
+				DF1C985012DB15CE004A5535 /* yellow.jpg */,
+			);
+			name = colours;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/colours;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF81064A12897F1F00220ABC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DF81064B12897F1F00220ABC /* Resources.h */,
+			);
+			name = include;
+			path = CinderProjects/PhilosopherCube_Final/include;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF81067012897F7200220ABC /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				DF81067112897F8300220ABC /* libftgl.a */,
+				DF81067312897F8B00220ABC /* libfreetype.a */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		DF81067912897FF900220ABC /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C986C12DB1789004A5535 /* h.ttf */,
+			);
+			name = fonts;
+			path = CinderProjects/PhilosopherCube_Final/resources/fonts;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF81067C12897FF900220ABC /* PhilosopherCube_MayaProj */ = {
+			isa = PBXGroup;
+			children = (
+				DF81068112897FF900220ABC /* obj */,
+				DF8106CA12897FFA00220ABC /* scenes */,
+				DF8106D012897FFA00220ABC /* shaders */,
+				DF8106DB12897FFA00220ABC /* textures */,
+				DF81070A12897FFA00220ABC /* workspace.mel */,
+			);
+			name = PhilosopherCube_MayaProj;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF81068112897FF900220ABC /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C986612DB168F004A5535 /* Wall.obj */,
+				DF81068212897FF900220ABC /* AlienCube_1.obj */,
+				DF81068312897FF900220ABC /* AlienCube_10.obj */,
+				DF81068412897FF900220ABC /* AlienCube_11.obj */,
+				DF81068512897FF900220ABC /* AlienCube_12.obj */,
+				DF81068612897FF900220ABC /* AlienCube_13.obj */,
+				DF81068712897FF900220ABC /* AlienCube_14.obj */,
+				DF81068812897FF900220ABC /* AlienCube_15.obj */,
+				DF81068912897FF900220ABC /* AlienCube_16.obj */,
+				DF81068A12897FF900220ABC /* AlienCube_17.obj */,
+				DF81068B12897FF900220ABC /* AlienCube_18.obj */,
+				DF81068C12897FF900220ABC /* AlienCube_19.obj */,
+				DF81068D12897FF900220ABC /* AlienCube_2.obj */,
+				DF81068E12897FF900220ABC /* AlienCube_20.obj */,
+				DF81068F12897FF900220ABC /* AlienCube_21.obj */,
+				DF81069012897FF900220ABC /* AlienCube_22.obj */,
+				DF81069112897FF900220ABC /* AlienCube_23.obj */,
+				DF81069212897FF900220ABC /* AlienCube_24.obj */,
+				DF81069312897FF900220ABC /* AlienCube_3.obj */,
+				DF81069412897FF900220ABC /* AlienCube_4.obj */,
+				DF81069512897FF900220ABC /* AlienCube_5.obj */,
+				DF81069612897FF900220ABC /* AlienCube_6.obj */,
+				DF81069712897FF900220ABC /* AlienCube_7.obj */,
+				DF81069812897FFA00220ABC /* AlienCube_8.obj */,
+				DF81069912897FFA00220ABC /* AlienCube_9.obj */,
+				DF81069A12897FFA00220ABC /* AlienCube_Test.obj */,
+				DF81069B12897FFA00220ABC /* blocks */,
+			);
+			name = obj;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF81069B12897FFA00220ABC /* blocks */ = {
+			isa = PBXGroup;
+			children = (
+				DF81069C12897FFA00220ABC /* Block_00.mtl */,
+				DF81069D12897FFA00220ABC /* Block_00.obj */,
+				DF81069E12897FFA00220ABC /* Block_01.mtl */,
+				DF81069F12897FFA00220ABC /* Block_01.obj */,
+				DF8106A012897FFA00220ABC /* Block_02.mtl */,
+				DF8106A112897FFA00220ABC /* Block_02.obj */,
+				DF8106A212897FFA00220ABC /* Block_03.mtl */,
+				DF8106A312897FFA00220ABC /* Block_03.obj */,
+				DF8106A412897FFA00220ABC /* Block_04.mtl */,
+				DF8106A512897FFA00220ABC /* Block_04.obj */,
+				DF8106A612897FFA00220ABC /* Block_10.mtl */,
+				DF8106A712897FFA00220ABC /* Block_10.obj */,
+				DF8106A812897FFA00220ABC /* Block_11.mtl */,
+				DF8106A912897FFA00220ABC /* Block_11.obj */,
+				DF8106AA12897FFA00220ABC /* Block_12.mtl */,
+				DF8106AB12897FFA00220ABC /* Block_12.obj */,
+				DF8106AC12897FFA00220ABC /* Block_13.mtl */,
+				DF8106AD12897FFA00220ABC /* Block_13.obj */,
+				DF8106AE12897FFA00220ABC /* Block_14.mtl */,
+				DF8106AF12897FFA00220ABC /* Block_14.obj */,
+				DF8106B012897FFA00220ABC /* Block_20.mtl */,
+				DF8106B112897FFA00220ABC /* Block_20.obj */,
+				DF8106B212897FFA00220ABC /* Block_21.mtl */,
+				DF8106B312897FFA00220ABC /* Block_21.obj */,
+				DF8106B412897FFA00220ABC /* Block_22.mtl */,
+				DF8106B512897FFA00220ABC /* Block_22.obj */,
+				DF8106B612897FFA00220ABC /* Block_23.mtl */,
+				DF8106B712897FFA00220ABC /* Block_23.obj */,
+				DF8106B812897FFA00220ABC /* Block_24.mtl */,
+				DF8106B912897FFA00220ABC /* Block_24.obj */,
+			);
+			name = blocks;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/obj/blocks;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF8106CA12897FFA00220ABC /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DF8106CB12897FFA00220ABC /* .mayaSwatches */,
+				DF8106CD12897FFA00220ABC /* AlienCube_Animated.ma */,
+			);
+			name = scenes;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/scenes;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF8106CB12897FFA00220ABC /* .mayaSwatches */ = {
+			isa = PBXGroup;
+			children = (
+				DF8106CC12897FFA00220ABC /* AlienCube_NotExtruded.ma.swatches */,
+			);
+			name = .mayaSwatches;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/scenes/.mayaSwatches;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF8106D012897FFA00220ABC /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				DF8106D112897FFA00220ABC /* basicTexture_frag.glsl */,
+				DF8106D212897FFA00220ABC /* basicTexture_vert.glsl */,
+				DF8106D512897FFA00220ABC /* shadowMap_2_frag.glsl */,
+				DF8106D612897FFA00220ABC /* shadowMap_2_vert.glsl */,
+				DF8106D712897FFA00220ABC /* shadowMap_frag.glsl */,
+				DF8106D812897FFA00220ABC /* shadowMap_vert.glsl */,
+				DF8106D912897FFA00220ABC /* textureAndShadow_frag.glsl */,
+				DF8106DA12897FFA00220ABC /* textureAndShadow_vert.glsl */,
+			);
+			name = shaders;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/shaders;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF8106DB12897FFA00220ABC /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C984812DB15CE004A5535 /* colours */,
+				DF8106DC12897FFA00220ABC /* .mayaSwatches */,
+				DF8106E512897FFA00220ABC /* AlienCube_Texture.jpg */,
+				DF8106E612897FFA00220ABC /* AlienCube_Texture_2.jpg */,
+				DF8106F012897FFA00220ABC /* corona.png */,
+				DF8106F212897FFA00220ABC /* CubeTexture.jpg */,
+				DF8106F412897FFA00220ABC /* GlowParticle.png */,
+				DF8106F512897FFA00220ABC /* GlowParticle2.png */,
+				DF8106F612897FFA00220ABC /* GlowParticle3.png */,
+				DF8106F712897FFA00220ABC /* GlowParticleBG.png */,
+				DF8106F812897FFA00220ABC /* QuestionTex.jpg */,
+				DF8106F912897FFA00220ABC /* sampleTextTex.jpg */,
+				DF8106FB12897FFA00220ABC /* sampleTextTex2.jpg */,
+				DF8106FC12897FFA00220ABC /* sampleTextTex3.jpg */,
+				DF81070212897FFA00220ABC /* TestWallTexture.jpg */,
+				DF81070312897FFA00220ABC /* tweetMessage.jpg */,
+				DF81070412897FFA00220ABC /* WallTexture_1.jpg */,
+				DF81070512897FFA00220ABC /* WallTexture_2.jpg */,
+				DF81070612897FFA00220ABC /* WallTexture_3.jpg */,
+				DF81070712897FFA00220ABC /* WallTexture_4.jpg */,
+				DF81070912897FFA00220ABC /* WallTexture_Flipped.jpg */,
+			);
+			name = textures;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF8106DC12897FFA00220ABC /* .mayaSwatches */ = {
+			isa = PBXGroup;
+			children = (
+				DF8106DD12897FFA00220ABC /* AlienCube_Texture.jpg.swatch */,
+				DF8106DE12897FFA00220ABC /* CubeTexture.jpg.swatch */,
+				DF8106DF12897FFA00220ABC /* sampleTextTex2.jpg.swatch */,
+				DF8106E012897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.03 PM.png.swatch */,
+				DF8106E112897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.23 PM.png.swatch */,
+				DF8106E212897FFA00220ABC /* ScreenShotMatch.png.swatch */,
+				DF8106E312897FFA00220ABC /* ScreenShotMatch_Side.png.swatch */,
+			);
+			name = .mayaSwatches;
+			path = CinderProjects/PhilosopherCube_Final/resources/PhilosopherCube_MayaProj/textures/.mayaSwatches;
+			sourceTree = DEVELOPER_DIR;
+		};
+		DF81070B12897FFA00220ABC /* shellScripts */ = {
+			isa = PBXGroup;
+			children = (
+				DF81070C12897FFA00220ABC /* philoTwitterMentions.sh */,
+				DF81070D12897FFA00220ABC /* philoTwitterUpdate.sh */,
+				DF81070E12897FFA00220ABC /* twitterReturn.xml */,
+			);
+			name = shellScripts;
+			path = CinderProjects/PhilosopherCube_Final/resources/shellScripts;
+			sourceTree = DEVELOPER_DIR;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* PhilosopherCube_Final */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PhilosopherCube_Final" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhilosopherCube_Final;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PhilosopherCube_Final;
+			productReference = 8D1107320486CEB800E47090 /* PhilosopherCube_Final.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PhilosopherCube_Final" */;
+			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PhilosopherCube_Final */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* PhilosopherCube_Final */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */,
+				DF81071112897FFA00220ABC /* AlienCube_1.obj in Resources */,
+				DF81071212897FFA00220ABC /* AlienCube_10.obj in Resources */,
+				DF81071312897FFA00220ABC /* AlienCube_11.obj in Resources */,
+				DF81071412897FFA00220ABC /* AlienCube_12.obj in Resources */,
+				DF81071512897FFA00220ABC /* AlienCube_13.obj in Resources */,
+				DF81071612897FFA00220ABC /* AlienCube_14.obj in Resources */,
+				DF81071712897FFA00220ABC /* AlienCube_15.obj in Resources */,
+				DF81071812897FFA00220ABC /* AlienCube_16.obj in Resources */,
+				DF81071912897FFA00220ABC /* AlienCube_17.obj in Resources */,
+				DF81071A12897FFA00220ABC /* AlienCube_18.obj in Resources */,
+				DF81071B12897FFA00220ABC /* AlienCube_19.obj in Resources */,
+				DF81071C12897FFA00220ABC /* AlienCube_2.obj in Resources */,
+				DF81071D12897FFA00220ABC /* AlienCube_20.obj in Resources */,
+				DF81071E12897FFA00220ABC /* AlienCube_21.obj in Resources */,
+				DF81071F12897FFA00220ABC /* AlienCube_22.obj in Resources */,
+				DF81072012897FFA00220ABC /* AlienCube_23.obj in Resources */,
+				DF81072112897FFA00220ABC /* AlienCube_24.obj in Resources */,
+				DF81072212897FFA00220ABC /* AlienCube_3.obj in Resources */,
+				DF81072312897FFA00220ABC /* AlienCube_4.obj in Resources */,
+				DF81072412897FFA00220ABC /* AlienCube_5.obj in Resources */,
+				DF81072512897FFA00220ABC /* AlienCube_6.obj in Resources */,
+				DF81072612897FFA00220ABC /* AlienCube_7.obj in Resources */,
+				DF81072712897FFA00220ABC /* AlienCube_8.obj in Resources */,
+				DF81072812897FFA00220ABC /* AlienCube_9.obj in Resources */,
+				DF81072912897FFA00220ABC /* AlienCube_Test.obj in Resources */,
+				DF81072A12897FFA00220ABC /* Block_00.mtl in Resources */,
+				DF81072B12897FFA00220ABC /* Block_00.obj in Resources */,
+				DF81072C12897FFA00220ABC /* Block_01.mtl in Resources */,
+				DF81072D12897FFA00220ABC /* Block_01.obj in Resources */,
+				DF81072E12897FFA00220ABC /* Block_02.mtl in Resources */,
+				DF81072F12897FFA00220ABC /* Block_02.obj in Resources */,
+				DF81073012897FFA00220ABC /* Block_03.mtl in Resources */,
+				DF81073112897FFA00220ABC /* Block_03.obj in Resources */,
+				DF81073212897FFA00220ABC /* Block_04.mtl in Resources */,
+				DF81073312897FFA00220ABC /* Block_04.obj in Resources */,
+				DF81073412897FFA00220ABC /* Block_10.mtl in Resources */,
+				DF81073512897FFA00220ABC /* Block_10.obj in Resources */,
+				DF81073612897FFA00220ABC /* Block_11.mtl in Resources */,
+				DF81073712897FFA00220ABC /* Block_11.obj in Resources */,
+				DF81073812897FFA00220ABC /* Block_12.mtl in Resources */,
+				DF81073912897FFA00220ABC /* Block_12.obj in Resources */,
+				DF81073A12897FFA00220ABC /* Block_13.mtl in Resources */,
+				DF81073B12897FFA00220ABC /* Block_13.obj in Resources */,
+				DF81073C12897FFA00220ABC /* Block_14.mtl in Resources */,
+				DF81073D12897FFA00220ABC /* Block_14.obj in Resources */,
+				DF81073E12897FFA00220ABC /* Block_20.mtl in Resources */,
+				DF81073F12897FFA00220ABC /* Block_20.obj in Resources */,
+				DF81074012897FFA00220ABC /* Block_21.mtl in Resources */,
+				DF81074112897FFA00220ABC /* Block_21.obj in Resources */,
+				DF81074212897FFA00220ABC /* Block_22.mtl in Resources */,
+				DF81074312897FFA00220ABC /* Block_22.obj in Resources */,
+				DF81074412897FFA00220ABC /* Block_23.mtl in Resources */,
+				DF81074512897FFA00220ABC /* Block_23.obj in Resources */,
+				DF81074612897FFA00220ABC /* Block_24.mtl in Resources */,
+				DF81074712897FFA00220ABC /* Block_24.obj in Resources */,
+				DF81075712897FFA00220ABC /* AlienCube_NotExtruded.ma.swatches in Resources */,
+				DF81075812897FFA00220ABC /* AlienCube_Animated.ma in Resources */,
+				DF81075B12897FFA00220ABC /* basicTexture_frag.glsl in Resources */,
+				DF81075C12897FFA00220ABC /* basicTexture_vert.glsl in Resources */,
+				DF81075F12897FFA00220ABC /* shadowMap_2_frag.glsl in Resources */,
+				DF81076012897FFA00220ABC /* shadowMap_2_vert.glsl in Resources */,
+				DF81076112897FFA00220ABC /* shadowMap_frag.glsl in Resources */,
+				DF81076212897FFA00220ABC /* shadowMap_vert.glsl in Resources */,
+				DF81076312897FFA00220ABC /* textureAndShadow_frag.glsl in Resources */,
+				DF81076412897FFA00220ABC /* textureAndShadow_vert.glsl in Resources */,
+				DF81076512897FFA00220ABC /* AlienCube_Texture.jpg.swatch in Resources */,
+				DF81076612897FFA00220ABC /* CubeTexture.jpg.swatch in Resources */,
+				DF81076712897FFA00220ABC /* sampleTextTex2.jpg.swatch in Resources */,
+				DF81076812897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.03 PM.png.swatch in Resources */,
+				DF81076912897FFA00220ABC /* Screen shot 2010-10-27 at 5.50.23 PM.png.swatch in Resources */,
+				DF81076A12897FFA00220ABC /* ScreenShotMatch.png.swatch in Resources */,
+				DF81076B12897FFA00220ABC /* ScreenShotMatch_Side.png.swatch in Resources */,
+				DF81076D12897FFA00220ABC /* AlienCube_Texture.jpg in Resources */,
+				DF81076E12897FFA00220ABC /* AlienCube_Texture_2.jpg in Resources */,
+				DF81077712897FFA00220ABC /* corona.png in Resources */,
+				DF81077912897FFA00220ABC /* CubeTexture.jpg in Resources */,
+				DF81077B12897FFA00220ABC /* GlowParticle.png in Resources */,
+				DF81077C12897FFA00220ABC /* GlowParticle2.png in Resources */,
+				DF81077D12897FFA00220ABC /* GlowParticle3.png in Resources */,
+				DF81077E12897FFA00220ABC /* GlowParticleBG.png in Resources */,
+				DF81077F12897FFA00220ABC /* QuestionTex.jpg in Resources */,
+				DF81078012897FFA00220ABC /* sampleTextTex.jpg in Resources */,
+				DF81078212897FFA00220ABC /* sampleTextTex2.jpg in Resources */,
+				DF81078312897FFA00220ABC /* sampleTextTex3.jpg in Resources */,
+				DF81078912897FFA00220ABC /* TestWallTexture.jpg in Resources */,
+				DF81078A12897FFA00220ABC /* tweetMessage.jpg in Resources */,
+				DF81078B12897FFA00220ABC /* WallTexture_1.jpg in Resources */,
+				DF81078C12897FFA00220ABC /* WallTexture_2.jpg in Resources */,
+				DF81078D12897FFA00220ABC /* WallTexture_3.jpg in Resources */,
+				DF81078E12897FFA00220ABC /* WallTexture_4.jpg in Resources */,
+				DF81079012897FFA00220ABC /* WallTexture_Flipped.jpg in Resources */,
+				DF81079112897FFA00220ABC /* workspace.mel in Resources */,
+				DF81079212897FFA00220ABC /* philoTwitterMentions.sh in Resources */,
+				DF81079312897FFA00220ABC /* philoTwitterUpdate.sh in Resources */,
+				DF81079412897FFA00220ABC /* twitterReturn.xml in Resources */,
+				DF1C985112DB15CE004A5535 /* black.jpg in Resources */,
+				DF1C985212DB15CE004A5535 /* blue.jpg in Resources */,
+				DF1C985312DB15CE004A5535 /* darkGreen.jpg in Resources */,
+				DF1C985412DB15CE004A5535 /* lightGreen.jpg in Resources */,
+				DF1C985512DB15CE004A5535 /* orange.jpg in Resources */,
+				DF1C985612DB15CE004A5535 /* red.jpg in Resources */,
+				DF1C985712DB15CE004A5535 /* white.jpg in Resources */,
+				DF1C985812DB15CE004A5535 /* yellow.jpg in Resources */,
+				DF1C986712DB168F004A5535 /* Wall.obj in Resources */,
+				DF1C986D12DB1789004A5535 /* h.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BAE65A0E7ED9C10018A608 /* PhilosopherCube_FinalApp.cpp in Sources */,
+				DF81065412897F3500220ABC /* AlienCube.cpp in Sources */,
+				DF81065512897F3500220ABC /* AnswerWall.cpp in Sources */,
+				DF81065612897F3500220ABC /* MovableBlocks.cpp in Sources */,
+				DF81065712897F3500220ABC /* Particle.cpp in Sources */,
+				DF81065812897F3500220ABC /* ParticleController.cpp in Sources */,
+				DF81065912897F3500220ABC /* Question.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PhilosopherCube_Final_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/opt/local/var/macports/software/ftgl/2.1.3-rc5_0+universal/opt/local/lib\"",
+					"\"/opt/local/var/macports/software/freetype/2.4.3_0+universal/opt/local/lib\"",
+				);
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_NAME = PhilosopherCube_Final;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PhilosopherCube_Final_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/opt/local/var/macports/software/ftgl/2.1.3-rc5_0+universal/opt/local/lib\"",
+					"\"/opt/local/var/macports/software/freetype/2.4.3_0+universal/opt/local/lib\"",
+				);
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_NAME = PhilosopherCube_Final;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../cinder_0.8.2_mac;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/boost\"",
+					"/opt/local/var/macports/software/freetype/2.4.3_0+universal/opt/local/include",
+					"/opt/local/var/macports/software/freetype/2.4.3_0+universal/opt/local/include/freetype2",
+					"/opt/local/var/macports/software/ftgl/2.1.3-rc5_0+universal/opt/local/include",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../cinder_0.8.2_mac;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/boost\"",
+					"/opt/local/var/macports/software/freetype/2.4.3_0+universal/opt/local/include",
+					"/opt/local/var/macports/software/freetype/2.4.3_0+universal/opt/local/include/freetype2",
+					"/opt/local/var/macports/software/ftgl/2.1.3-rc5_0+universal/opt/local/include",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PhilosopherCube_Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PhilosopherCube_Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,16 @@
+//Maya 2010 Project Definition
+
+workspace -fr "scene" "scenes";
+workspace -fr "mayaAscii" "scenes";
+workspace -fr "mentalray" "mentalRay";
+workspace -fr "lights" "shaders";
+workspace -fr "OBJexport" "obj";
+workspace -fr "mel" "mel";
+workspace -fr "textures" "textures";
+workspace -fr "particles" "particles";
+workspace -fr "image" "images";
+workspace -fr "mayaBinary" "scenes";
+workspace -fr "renderScenes" "renders";
+workspace -fr "images" "images";
+workspace -fr "OBJ" "obj";
+workspace -fr "templates" "assets";
