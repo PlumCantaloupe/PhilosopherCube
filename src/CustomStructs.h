@@ -3,7 +3,6 @@
  *  emptyExample
  *
  *  Created by anthonyScavarelli on 10-10-02.
- *  Copyright 2010 Carleton University. All rights reserved.
  *
  */
 

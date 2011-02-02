@@ -3,7 +3,6 @@
  *  PhilosopherCube_82_5
  *
  *  Created by anthonyScavarelli on 10-10-23.
- *  Copyright 2010 Carleton University. All rights reserved.
  *
  */
 
